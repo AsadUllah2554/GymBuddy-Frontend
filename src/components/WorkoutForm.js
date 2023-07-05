@@ -23,7 +23,7 @@ export default function WorkoutForm () {
         const workout = {title, load, reps}
 
         if(!update) {
-            const response  =  await fetch('/api/workouts', {
+            const response  =  await fetch('https://worried-hare-bathing-suit.cyclic.app/api/workouts', {
                 method: 'POST',
                headers: {"Content-Type": "application/json",
                'Authorization': `Bearer ${user.token}`},
@@ -50,7 +50,7 @@ export default function WorkoutForm () {
 
         if(update) {
             console.log("Workout ID", workoutID)
-            const response = await fetch(`/api/workouts/${workoutID}`,{
+            const response = await fetch(`https://worried-hare-bathing-suit.cyclic.app/api/workouts/${workoutID}`,{
                 method:'PATCH',
                 headers: {
                   'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ export default function WorkoutForm () {
             }
 
               if(response.ok) {
-                const latestFetch = await fetch(`/api/workouts/${workoutID}`)
+                const latestFetch = await fetch(`https://worried-hare-bathing-suit.cyclic.app/api/workouts/${workoutID}`)
                 const newJson = await latestFetch.json()
                 console.log(latestFetch)
                 console.log(newJson)
@@ -82,27 +82,6 @@ export default function WorkoutForm () {
 
         }
     }
-
-    // const handleUpdate = async () => {
-    //     const response = await fetch(`/api/workouts/${workoutID._id}`,{
-    //       method:'PATCH',
-    //       headers: {
-    //         'Content-Type': 'application/json'
-    //       },
-    //       body: JSON.stringify({
-    //         title:'Testing',
-    //         load: 100,
-    //         reps: 10
-    //       })
-    //     })
-    //     const json = await response.json()
-    //     if(response.ok) {
-    //       dispatch({type:'UPDATE_WORKOUT',payload:json})
-    //     }
-    
-    //   }
-  //  649c6d0cc870f815b1774b8d 
-
 
   return (
     <form className='create' onSubmit={handleSubmit}>
