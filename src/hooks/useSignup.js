@@ -10,7 +10,7 @@ export const useSignup = () => {
     const signup = async (email,password) => {
         setIsLoading(true);
         setError(null);
-        const response = await fetch('https://gym-buddy-server.vercel.app/api/user/signup',{
+        const response = await fetch('https://worried-hare-bathing-suit.cyclic.app/api/user/signup',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
