@@ -16,8 +16,8 @@ export default function Login() {
   return (
     <form className='login' onSubmit={handleSubmit}>
         <h3>Login</h3>
-        <p>Test user email: testuser123@gmail.com</p>
-        <p>Test user password: Te$t1234</p>
+        <p>Test user email:<b> testuser@gmail.com</b></p>
+        <p>Test user password: <b>Te$t1234</b></p>
         <label >Email:</label>
         <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} />
         <label >Password:</label>
