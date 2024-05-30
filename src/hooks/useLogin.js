@@ -10,7 +10,7 @@ export const useLogin = () => {
     const login = async (email,password) => {
         setIsLoading(true);
         setError(null);
-        const response = await fetch('https://worried-hare-bathing-suit.cyclic.app/api/user/login',{
+        const response = await fetch('https://gymbuddy-797d4ba7ac25.herokuapp.com/',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

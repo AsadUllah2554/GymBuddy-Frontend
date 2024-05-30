@@ -23,7 +23,7 @@ export default function WorkoutForm () {
         const workout = {title, load, reps}
 
         if(!update) {
-            const response  =  await fetch('https://worried-hare-bathing-suit.cyclic.app/api/workouts', {
+            const response  =  await fetch('https://gymbuddy-797d4ba7ac25.herokuapp.com/api/workouts', {
                 method: 'POST',
                headers: {"Content-Type": "application/json",
                'Authorization': `Bearer ${user.token}`},

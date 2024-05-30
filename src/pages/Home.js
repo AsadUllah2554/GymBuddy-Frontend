@@ -11,7 +11,7 @@ export default function Home() {
  const {user} = useAuthContext()
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('https://worried-hare-bathing-suit.cyclic.app/api/workouts', {
+      const response = await fetch('https://gymbuddy-797d4ba7ac25.herokuapp.com/api/workouts', {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }
