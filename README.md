@@ -1,7 +1,11 @@
 Workout Buddy 💪🏋️‍♀️
+
+
 🚧 Project Status: Under Active Development 🚧
 Workout Buddy is an evolving fitness tracking web application designed to help users log, track, and optimize their workout routines.
 🌟 Current Features
+
+
 
 User Authentication
 Workout Creation
