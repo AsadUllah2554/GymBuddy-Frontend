@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+Workout Buddy 💪🏋️‍♀️
+🚧 Project Status: Under Active Development 🚧
+Workout Buddy is an evolving fitness tracking web application designed to help users log, track, and optimize their workout routines.
+🌟 Current Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+User Authentication
+Workout Creation
+Workout Logging
+CRUD Operations for Workouts
+Secure Backend API
 
-## Available Scripts
+🚀 Upcoming Features (Roadmap)
 
-In the project directory, you can run:
+AI-Powered Custom Workout Plans
+Progress Tracking Dashboards
+Fitness Goal Setting
+Nutritional Insights
+Exercise Recommendation Engine
 
-### `npm start`
+🛠 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Frontend: React.js
+Backend: Node.js, Express.js
+Database: MongoDB
+Authentication: JSON Web Tokens (JWT)
+State Management: Context API
+Styling: Tailwind CSS / Material UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔧 Installation
+Prerequisites
 
-### `npm test`
+Node.js (v14+)
+npm or yarn
+MongoDB
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Setup Steps
 
-### `npm run build`
+Clone the Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bashCopygit clone https://github.com/yourusername/workout-buddy.git
+cd workout-buddy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bashCopy# Install backend dependencies
+cd backend
+npm install
 
-### `npm run eject`
+# Install frontend dependencies
+cd ../frontend
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Configure Environment Variables
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create .env files in both backend and frontend directories
+Add necessary configurations:
+Copy# Backend .env
+PORT=4000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Frontend .env
+REACT_APP_API_URL=http://localhost:4000/api
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run the Application
 
-### Code Splitting
+bashCopy# Start backend (from backend directory)
+npm run dev
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Start frontend (from frontend directory)
+npm start
+🔒 Security Features
 
-### Analyzing the Bundle Size
+Secure Authentication
+Protected Routes
+Input Validation
+Password Encryption
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🤝 Contribution Guidelines
 
-### Making a Progressive Web App
+Fork the Repository
+Create a Feature Branch
+Commit Your Changes
+Push to the Branch
+Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📣 Disclaimer
+This application is currently under active development. Features are being continuously added and improved.
+🔬 Planned AI Integration
 
-### Advanced Configuration
+Personalized Workout Generation
+Exercise Recommendation
+Progress Prediction
+Adaptive Training Plans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📝 License
+MIT License
+📬 Contact
+Asad Ullah
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: asad.dev2554@gmail.com
+LinkedIn: https://www.linkedin.com/in/asadmerndev/
