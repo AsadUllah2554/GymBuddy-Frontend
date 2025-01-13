@@ -12,7 +12,7 @@ export default function WorkoutDetails({workout}) {
     if(!user){
       return
     }
-    const response = await fetch(`https://gymbuddy-797d4ba7ac25.herokuapp.com/api/workouts/${workout._id}` ,{
+    const response = await fetch(`${process.env.SERVER_URL}/api/workouts/${workout._id}` ,{
       method:'DELETE',
       headers:{
         'Authorization':`Bearer ${user.token}`
