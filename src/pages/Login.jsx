@@ -11,6 +11,10 @@ export default function Login({ initialValue }) {
   const { login, error, isloading } = useLogin();
   const { signup } = useSignup();
 
+  const loginAsGuest = async () => {
+    await login("guestuser@workoutbuddyy.com", "Zxcv1234!")
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -104,6 +108,15 @@ export default function Login({ initialValue }) {
                   {isSignIn ? "Sign in" : "Sign up"}
                 </button>
                 {error && <div className="error">{error}</div>}
+              
+                <button
+                  
+                  className="w-full mt-3 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                  disabled={isloading}
+                  onClick={loginAsGuest}
+                >
+                  Use as Guest
+                </button>
               </div>
             </form>
 
